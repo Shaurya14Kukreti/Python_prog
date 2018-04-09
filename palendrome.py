@@ -1,16 +1,36 @@
-def palendrome(num):
- temp=int(num)
- f=0
- while num>0:
-  a=int(num%10)
-  f= (f*10+a)
-  print(f)
-  num=int(num/10)
 
- if f==temp:
-  print("number is palendrome  ",temp)
- else:
-  print("number is not palendrome ",temp)   
-  
+def reverse(s):
+  str = ""
+  for i in s:
+      str=i+str
+     
+  return str    
 
-palendrome(23)
+
+
+string = "A man, a plan, a canal: Panama" 
+
+st = string.replace(" ", "")
+t =st.casefold()
+
+y=''
+for x in t:
+  if(((x >="a")and(x<="z"))or('0'<=x <='9')):
+      y +=x
+      
+  else:
+     continue
+ 
+#print("String after removal of special characters is  ::",y)
+
+if (y==""):
+   print("string is empty")
+   
+str1 = reverse(y)
+#print( "String after reverse function is  ::  ",str1)
+
+if(y==str1):
+  print("String is palendrome  ")
+else:
+  print("String s not palendrome")
+      
