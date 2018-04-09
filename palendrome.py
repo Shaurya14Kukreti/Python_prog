@@ -7,7 +7,7 @@ def reverse(s):
   return str    
 
 
-#starting of program take A man, a plan, a canal: Panama as input 
+#starting of program take "A man, a plan, a canal: Panama"  as input 
 string = "A man, a plan, a canal: Panama" 
 y=''    # empty string
 
